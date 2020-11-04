@@ -1,288 +1,196 @@
  @import '../abstracts/variables';
 
 
+/*header-srcoll*/
+.img-logo{
+    width: 50px;
+    height: 60px;
+    object-fit: cover;
+}
+.header-right{
+    margin: 0 57rem;
+    font-size: 20px;
+    font-family: $nameFont2;
+    font-weight: bold;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+}
 
+#header-inner{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 50px 10px;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
 
+@keyframes small-to-big{
+    from{
+        padding: 50px 10px;
+    }
+    to{
+        padding: 10px 10px;
+    }
+}
 
+@keyframes big-to-small{
+    from{
+        padding: 10px 10px;
+    }
+    to{
+        padding: 50px 10px;
+    }
+}
 
- 
 /*slick-slide-main*/
+.img-area img{
+    width: 100%;
+    height: 100vh;
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateX(-50%, 50%);
+    text-align: center;
+    h2{
+        font-size: 55px;
+        text-transform: uppercase;
+        color: yellowgreen;
+        margin: 0;
+        font-weight: bold;
+    }
+    p{
+        color: yellow;
+        font-weight: bold;
+    }
 
+}
+/*end slick-slide-main*/
 
-// .nav-item{
-//     font-weight: bold;
-//     font-size: 19px;
-//     margin: -64px 0px;
-//     float: right;
-//     text-align: justify;
-// }
+// css phần tạo menu monbile
+.nav-bar-btn{
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0 , 0, 0, 0.3);
+    display: none;
+    animation: fadeInLeft linear 0.2s;
+}
+.nav-mobile{
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s ;
+}
+.nav-mobile-list{
+    margin-top: 24px;
+}
+.nav-mobile-link{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+}
+.nav-mobile-close{
+    width: 28px;
+    height: 28px;
+    color: #666;
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+}
+.nav-input{
+    display: none;
+}
+.nav-input:checked ~ .nav-overlay{
+    display: block;    
+}
+.nav-input:checked ~ .nav-mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
 
-// .logo img{
-//     vertical-align: middle;
-//     border-style: none;
-//     position: relative;
-//     left: 10%;
-//     width: 10%;
-//     height: auto;
-// }
+@media (max-width: 1023px){
+    .nav-bar-btn{
+        display: block;
+    }
+    .nav-pc{
+        display: block;
+    }
+}
 
-// .nav-item ul{ 
-//     list-style: none;
-// }
-// .nav-area{
-//     overflow: hidden;
-//     z-index: 10;
-//     width: 90%;
-// }
-// .nav-area ul li{
-//     display: inline-block;
-// }
-// .nav-area ul li a{
-//     display: inline-block;
-//     padding: 10px 15px;
-//     text-transform: uppercase;
-//     text-decoration: none;
-//     color: rgb(31, 30, 30);
-//     font-family: $nameFont2;  
-// }
-// /* end slick-slide-main */
-// @media(max-width:1023px){
-//     .nav-area ul li{
-//         display: block !important;
-//     }
-//     .nav-area ul li a{
-//         display: block !important;
-//         padding: 10px 15px;
-//         text-transform: uppercase;
-//         text-decoration: none;
-//         color: rgb(31, 30, 30);
-//         font-family: $nameFont2;  
-//     }
-// }
-// @media(min-width:1024px){
-//     .nav-mobile{
-//         display: none;
-//     }
-    
-// }
-// /*Mobile nav*/
-// .nav-bar-btn{
-//     width: 28px ;
-//     height: 28px ;
-//     color: rgb(0, 0, 0);
-//     display: none;
-//     margin: 30px 0px;
-// }
-// .nav-overlay{
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     background-color: rgba(0, 0, 0, 0.2);
-//     display: none;
-//     animation: fadeInLeft linear 0.3s;
-// }
-
-// // nav-menu-mobile
-// .nav-mobile{
-//      position: fixed;
-//      top: 0;
-//      bottom: 0;
-//      left: 0;
-//      width: 320px;
-//      max-width: 100%;
-//      background-color: rgb(255, 255, 255);   
-//      transform: translateX(-100%);
-//      opacity: 0;
-//      transition: transform linear 0.2s, opacity linear 0.3s ;
-// }
-// .nav-mobile-list{
-//     position: absolute;
-//     padding: 20px 15px;
-// }
-// .nav-mobile-link{
-//     text-decoration: none;
-//     color: #333;
-//     display: block;
-//     padding: 8px 0;
-//     font-size: 1rem;
-// }
-
-// .nav-mobile-close{
-//     width: 28px;
-//     height: 28px;
-//     color: #666;
-//     position: absolute;
-//     top: 1rem;
-//     right: 1rem;
-// }
-// .nav-input{
-//     display: none;
-// }
-
-// .nav-input:checked ~ .nav-overlay {
-//     display: block;
-// }
-
-// .nav-input:checked ~ .nav-mobile{
-//     transform: translateX(0%);
-//     opacity: 1;
-// }
-
-// @media ( max-width: 1023px){
-//     .nav-bar-btn{
-//         display: block;
-//     }
-//     .nav-pc{
-//         display: none;
-//     }
-// }
-
-// @keyframes fadeInLeft{
-//     from{
-//         opacity: 0;
-//         transform: translateX(100%);
-//     }
-//     to{
-//         opacity: 1;
-//         transform: translateX(0);
-//     }
-// }
+@keyframes fadeInLeft{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /*end Mobile nav*/
 
 
-// a.nav-link {
-//     font-size: 30px;
-//     letter-spacing: 3px;
-
-// .dropdown-menu dropdown-item{
-//     font-size: 30px;
-//     letter-spacing: 3px;
-//     }
-// }
-
-/*end  navbar header */
-
-// .header {
-//     background-color: #fff;
-// }
-
-// .header-inner{
-//     max-width: 1024px;
-//     margin: 0 auto;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-// }
-
-// .logoTravelNhaTrang{
-//     max-width: 1rem;
-// }
 
 
-// .menu{
-//     opacity: 1;
-//     visibility: visible;
-//     z-index: 991 !important;
+// change coloer when hover text
+a.nav-link:hover {
+    color: yellow !important;
+}
 
-// }
-
-// a.link-menu-tour-dao{
-//     position: absolute;
-//     text-decoration: none;
-//     visibility: hidden;
-//     opacity: 0;
-// }
-
-// nav {
-//     width: 1170px;
-//     margin: auto;
-//     height: 60px;
-//     position: fixed;
-//     z-index: 100;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-// }
-
-// .logo {
-//     width: 15%;
-//     float: left;
-// }
-
-// .menu {
-//     width: 80%;
-//     float: right;
-// }
-
-// .menu ul {
-//     float: right;
-//     list-style: none;
-// }
-
-// .menu ul li {
-//     display: inline-block;
-// }
-
-// .menu ul li a {
-//     display: inline-block;
-//     text-decoration: none;
-//     color: #fff;
-//     padding: 15px;
-// }
-
-// .img-logo {
-//     object-fit: contain;
-//     width: 60%;
-//     height: 100px;
-//     border: 0;
-//     margin-left: 300px;
-// }
-
-// .navbar-header-item {
-//     padding: 10px 500px;
-// }
-
-// a.nav-link {
-//     padding: 10px 24px !important;
-//     text-transform: uppercase;
-//     font-family: 'nunito Sans', Arial, sans-serif;
-//     font-size: 15px;
-//     font-weight: bold;
-//     color: yellow !important;
-//     opacity: 1 !important;
-//     white-space:pre;
-//     position: relative;
-// }
-
-// a.nav-link:hover {
-//     color: yellow !important;
-// }
-
-// .navbar-nav .active>.nav-link {
-//     color: yellow !important;
-// }
-
-// .scroll-h {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     padding: 0;
-//     z-index: 10000;
-//     transition: all 0.2s ease-in-out;
-//     height: auto;
-//     background-color: transparent;
-//     text-align: center;
-//     line-height: 40px;
-// }
-
-// .scroll-h.active {
-//     background-color: white !important;
-//     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-//     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-//     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-// }
+.navbar-nav .active>.nav-link {
+    color: yellow !important;
+}
 
 // /*the end nav-header */
+/* Features Section */
+#features {
+	padding: 120px 0;
+}
+#features .features-item {
+	margin: 0 20px;
+}
+
+#features .features-item h2, h3, p{
+    font-family: $nameFont1;
+    color: yellow;
+    font-weight: bold;
+}
+#features img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+	margin: 30px auto 20px;
+}
+#features .about-img:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#features p {
+	line-height: 24px;
+	margin: 15px 0 30px;
+}

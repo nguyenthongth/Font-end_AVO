@@ -12,50 +12,65 @@
 </head>
 
 <body>
+    <!-- hedaer-scroll -->
+ <div>
+    <nav id="header-inner" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img class="img-logo" src="assets/images/TravelNhaTrang.png" alt="logo" style="width:40px;">
+          </a>
+    
+        <div class="nav-pc header-right collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+            <a class="nav-link" href="#">Trangchủ</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">DịchVụ</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Loại Phòng
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Loại 1</a>
+                <a class="dropdown-item" href="#">Loại 2</a>
+                <a class="dropdown-item" href="#">Loại 3</a>
+            </div>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Thôngtin</a>
+            </li>
+        </ul>
+            <!-- creare menu mobile-->
+            <label for="nav-mobile-input" class="nav-bar-btn">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+            </label>
+            
+            <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
 
-           
-                 <!-- <div class="logo">
-                <img src="assets/images/TravelNhaTrang.png">
-                </div>
-                <div class="nav-item">          
-                    <class class="nav-pc">
-                        <ul calss="nav-list">
-                            <li><a href="#" class="nav-link">Trang chủ</a></li>
-                            <li><a href="#" class="nav-link">Phòng</a></li>
-                            <li><a href="#" class="nav-link">Dịch vụ</a></li>
-                            <li><a href="#" class="nav-link">Khuyến mãi</a></li>
-                            <li><a href="#" class="nav-link">Liên hệ</a></li>
-                        </ul>
-                  </class>  </nav> -->
-               
+            <label for="nav-mobile-input" class="nav-overlay"> </label>
 
-                 <!-- <label for="nav-mobile-input" class="nav-bar-btn">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
-                 </label>
-
-                 <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
-
-                 <label for="nav-mobile-input" class="nav-overlay"> </label>
-               
-                 <nav class="nav-mobile">
-                     <label for="nav-mobile-input" class="nav-mobile-close">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
-                     </label>
-                    <ul calss="nav-mobile-list">
-                        <li><a href="#" class="nav-mobile-link">Trang chủ</a></li>
-                        <li><a href="#" class="nav-mobile-link">Phòng</a></li>
-                        <li><a href="#" class="nav-mobile-link">Dịch vụ</a></li>
-                        <li><a href="#" class="nav-mobile-link">Khuyến mãi</a></li>
-                        <li><a href="#" class="nav-mobile-link">Liên hệ</a></li>
-                    </ul>
-                 </nav>
+            <nav class="nav-mobile">
+                <label for="nav-mobile-input" class="nav-mobile-close">
+                   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                </label>
+               <ul class="nav-mobile-list">
+                   <li><a href="#" class="nav-mobile-link">Trang chủ</a></li>
+                   <li><a href="#" class="nav-mobile-link">Phòng</a></li>
+                   <li><a href="#" class="nav-mobile-link">Dịch vụ</a></li>
+                   <li><a href="#" class="nav-mobile-link">Khuyến mãi</a></li>
+                   <li><a href="#" class="nav-mobile-link">Liên hệ</a></li>
+               </ul>
+            </nav> 
+        </div>  
+    </nav>
+  </div>
                   
-        </div>
-    </div>  -->
 <!-- slick-slide-main -->
-    <!-- <div class="img-area">
+
+    <div class="img-area">
         <div>
-            <a href="index.html" title="Du lịch Nha Trang"><img src="assets/images/BG13.jpg" alt="BG13"></a>
+            <a href="index.html" title="Du lịch Nha Trang"><img src="assets/images/Banner1.jpg" alt="BG13"></a>
             <div class="banner-text">          
                 <p class="wrapTextSlideMain">Chào mừng đến với </p>  
                 <h2 class="titleSlideMain">Du lịch Nha Trang</h2>
@@ -63,83 +78,50 @@
         </div>
         
         <div>
-            <a href="index.html" title="Du lịch Nha Trang"><img src="assets/images/BG14.jpg" alt="BG14"></a>
+            <a href="index.html" title="Du lịch Nha Trang"><img src="assets/images/banner2.jpg" alt="BG14"></a>
             <div class="banner-text">
                 <p class="wrapTextSideMain">Đặt vé ngay </p>  
                 <h2 class="titleSlideMain">Giảm ngay 20%</h2>
             </div>
         </div>  
-    </div> -->
-
-    <!-- <div class="loading">
-        <div style="--value: 1"></div>
-        <div style="--value: 2"></div>
-        <div style="--value: 3"></div>
-        <div style="--value: 4"></div>
-        <div style="--value: 5"></div>
-        <div style="--value: 6"></div>
-        <div style="--value: 7"></div>
-        <div style="--value: 8"></div>
-    </div> -->
-    
-         
-    <!-- end slick slide main
+    </div>        
+ <!-- end slick slide main -->
     
 
-   <section class="ftco-section">
-         <div class="container">
-            <div class="row justify-content-center no-gutters">
-                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-                    <h2 class="mb-2">About us</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md d-flex align-items-stretch ftco-animate">
-                    <div class="media block-6 w-100 services d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-vector"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3>UI/UX Design</h3>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md d-flex align-items-stretch ftco-animate">
-                    <div class="media block-6 w-100 services d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-web-programming"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3>Web Development</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md d-flex align-items-stretch ftco-animate">
-                    <div class="media block-6 w-100 services d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-layer"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3>Product Design</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md d-flex align-items-stretch ftco-animate">
-                    <div class="media block-6 w-100 services d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-coding"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3>Mobile Apps</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md d-flex align-items-stretch ftco-animate">
-                    <div class="media block-6 w-100 services d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-zoom"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3>SEO</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+  <!-- Features Section -->
+<div id="features" class="text-center">
+    <div class="container">
+      <div class="section-title">
+        <h2>Homstay Gái Xinh</h2>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="features-item">
+            <h3>Phòng 1</h3>
+            <img src="assets/images/Bách-Xanh-House-Homestay-14.jpg" class="img-responsive" alt="">
+            <p>Xin chào các bạn mình đang học tập và làm theo giao diện gái xinh</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="features-item">
+            <h3>Phòng 2</h3>
+            <img src="assets/images/0.jpg" class="img-responsive" alt="">
+            <p>Xin chào các bạn mình đang học tập và làm theo giao diện gái xinh</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="features-item">
+            <h3>Phòng 3</h3>
+            <img src="assets/images/1.jpg" class="img-responsive" alt="">
+            <p>Xin chào các bạn mình đang học tập và làm theo giao diện gái xinh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="assets/js/script.js"></script>
+    
 </body>
 
 </html>
