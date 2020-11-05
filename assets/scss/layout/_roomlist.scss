@@ -1,0 +1,46 @@
+
+
+/* Features Section */
+#features {
+    padding: 120px 0;
+    h2{
+        color: #ffff00;
+        font-family: $nameFont2;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(217, 255, 0), 0 0 5px rgb(137, 139, 0);   
+        font-size: 40px; 
+        line-height: 90px;
+        text-align: center;
+    }
+}
+#features .features-item {
+	margin: 0 20px;
+}
+
+#features .features-item h3, .features-item p{
+    font-family: $nameFont1;
+    color:#80ff00;
+    font-weight: bold;
+}
+#features img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+	margin: 30px auto 20px;
+}
+#features .about-img:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#features p {
+	line-height: 24px;
+	margin: 15px 0 30px;
+}
+
+// end Features Section 
