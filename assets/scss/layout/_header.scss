@@ -3,12 +3,13 @@
 
 /*header-srcoll*/
 .img-logo{
-    width: 50px;
+    width: auto;
     height: 60px;
     object-fit: cover;
+    margin: 0 230px;
 }
 .header-right{
-    margin: 0 57rem;
+    // margin: 0 57rem;
     font-size: 20px;
     font-family: $nameFont2;
     font-weight: bold;
@@ -16,12 +17,12 @@
     word-spacing: 2px;
 }
 
-#header-inner{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    padding: 50px 10px;
-}
+// #header-inner{
+//     position: fixed;
+//     z-index: 1;
+//     width: 100%;
+//     padding: 50px 10px;
+// }
 .dropdown:hover>.dropdown-menu {
     display: block;
   }
@@ -48,23 +49,33 @@
 .img-area img{
     width: 100%;
     height: 100vh;
+    opacity: 0.7;
 }
 .banner-text{
     position: absolute;
     top: 50%;
-    left: 3%;
+    left: 37%;
     transform: translateX(-50%, 50%);
     text-align: center;
+    font-family: $nameFont2;
     h2{
+        
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(217, 255, 0), 0 0 5px rgb(137, 139, 0);
         font-size: 55px;
         text-transform: uppercase;
         color: yellowgreen;
         margin: 0;
         font-weight: bold;
+        text-align: justify;
     }
     p{
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(217, 255, 0), 0 0 5px rgb(137, 139, 0);    
+        font-size: 30px;
+        text-transform: capitalize;
         color: yellow;
         font-weight: bold;
+        text-align: justify;
+        font-family: $nameFont2;
     }
 
 }
@@ -74,7 +85,7 @@
 .nav-bar-btn{
     width: 28px;
     height: 28px;
-    display: block;
+    display: none;
 }
 .nav-overlay{
     position: fixed;
@@ -132,7 +143,7 @@
         display: block;
     }
     .nav-pc{
-        display: block;
+        display: none;
     }
 }
 

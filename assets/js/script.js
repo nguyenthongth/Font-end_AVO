@@ -47,7 +47,7 @@
     arrows: false,
     autoplay: true,
     autoplayspeed: 1000,
-    infinite: true,
+    infinite: true, 
     fade: true,
     cssEase: 'linear',
   });
