@@ -123,14 +123,14 @@ $('.slider').slick({
 });
 
 
-var imgs = $('.slider img');
-imgs.each(function(){
-  var item = $(this).closest('.item');
-  item.css({
-    'background-image': 'url(' + $(this).attr('src') + ')', 
-    'background-position': 'center',            
-    '-webkit-background-size': 'cover',
-    'background-size': 'cover', 
-  });
-  $(this).hide();
-});
+// var imgs = $('.slider img');
+// imgs.each(function(){
+//   var item = $(this).closest('.item');
+//   item.css({
+//     'background-image': 'url(' + $(this).attr('src') + ')', 
+//     'background-position': 'center',            
+//     '-webkit-background-size': 'cover',
+//     'background-size': 'cover', 
+//   });
+//   $(this).hide();
+// });
