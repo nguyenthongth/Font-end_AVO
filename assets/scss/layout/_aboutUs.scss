@@ -1,6 +1,9 @@
-    
 
-.icon-inner span{
+.Main-About-Us{
+    margin: 100px;
+  
+}
+.icon-inner{
     width: 120px;
     height: 120px;
     line-height: 120px;
@@ -9,10 +12,12 @@
     display: inline-block;
     border-radius: 50%;
 }
-.Text-About h2{
+.header-About-Us .Text-About{
     font-size: 40px;
+    font-family: $nameFont4;
+    color: red;
     text-align: center;
-    font-weight: $nameFont2;
+    text-justify: center;
 }
 
 .Number-About{
@@ -22,3 +27,16 @@
     line-height: 1;
     text-decoration: underline;
 }
+
+.img-AboutUs {
+    width: 106%;
+    height: auto;
+}
+
+.flaticon{
+
+}
+
+// .img-AboutUs{
+//     background-image: url(images/AboutUs.jpg);
+// }
