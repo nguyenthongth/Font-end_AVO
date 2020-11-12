@@ -52,31 +52,7 @@
     cssEase: 'linear',
   });
 /*slick-slider*/
-/* create scroll header */
-/*
- $(window).on("scroll", function() {
-    if($(window).scrollTop() > 30) {
-        $(".scroll-h").addClass("active");
-    } else {
-        //remove the background property so it comes transparent again (defined in your css)
-      $(".scroll-h").removeClass("active");
-    }
-}); */
 
-/*the end script scroll header*/  
-
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     document.getElementById("header-inner").style.padding = "10px 10px";
-//     document.getElementById("logo").style.fontSize = "25px";
-//   } else {
-//     document.getElementById("header-inner").style.padding = "30px 10px";
-//     document.getElementById("logo").style.fontSize = "35px";
-//   } 
-// }
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
@@ -89,49 +65,14 @@ function scrollFunction() {
   }
 }
 
-
 //Slide AboutUs
-if ($('.project-two-carousel').length) {
-  $('.project-two-carousel').owlCarousel({
-      loop: true,
-      margin: 50,
-      nav: false,
-      dots: false,
-      center: true,
-      smartSpeed: 700,
-      autoplay: 5000,
-      navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
-      responsive: {
-          0: {
-              items: 1
-          },
-          600: {
-              items: 1
-          },
-          778: {
-              items: 1
-          },
-          800: {
-              items: 1
-          },
-          991: {
-              items: 1
-          },
-          1200: {
-              items: 1,
-              margin: 0,
-              stagePadding: 175,
-          },
-          1500: {
-              items: 1,
-              stagePadding: 400
-          }
-      }
+$(document).ready(function(){
+
+  $('.sliderAboutUs').slick({
+  infinite: true,
+  prevArrow:'<button type="button" class="slick-prev"></button>',
+  nextArrow:'<button type="button" class="slick-next"></button>',
+  slidesToShow: 3,
+  slidesToScroll: 3
   });
-  $('.project-style-two-carousel-nav.btn-prev').on('click', function() {
-     $('.project-two-carousel').trigger('next.owl.carousel'); 
   });
-  $('.project-style-two-carousel-nav.btn-next').on('click', function() {
-     $('.project-two-carousel').trigger('prev.owl.carousel'); 
-  });
-}

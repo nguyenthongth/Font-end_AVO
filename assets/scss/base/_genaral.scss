@@ -1,3 +1,6 @@
+//
+@import '../abstracts/variables';
+
 // bootstrap
 @import '../vendor/bootstrap';
 // end bootstrap
@@ -15,12 +18,9 @@
 //end header
 
 //banner area and wrap resize img
-@import '../components/wrapImgResize';
+
 //end banner area and wrap resize img
 
-//menuList
-@import '../layout/menuList';
-
-//loading
-@import '../layout/loading';
+//MenuList
+@import '../layout/MenuList';
 

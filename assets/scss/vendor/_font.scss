@@ -1,9 +1,7 @@
-@import '../abstracts/variables';
-
 @font-face {
     font-family: $nameFont1;
     src: url(../fonts/#{$nameFont1}-Regular.ttf);
-    font-weight: 400;;
+    font-weight: 400;
 }
 
 @font-face {
@@ -15,7 +13,13 @@
 @font-face {
     font-family: $nameFont2;
     src: url(../fonts/#{$nameFont2}-Regular.ttf);
-    font-weight: 400;;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $nameFont2;
+    src: url(../fonts/#{$nameFont2}-Medium.ttf);
+    font-weight: 500;
 }
 
 @font-face {
@@ -30,9 +34,8 @@
     font-weight: 400;
 }
 
-@font-face {
-    font-family: $nameFont4;
-    src: url(../fonts/#{$nameFont4}-Regular.ttf);
+
+body {
+    font-family: $nameFont1;
     font-weight: 400;
 }
-

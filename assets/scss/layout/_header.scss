@@ -1,4 +1,4 @@
- 
+ @import '../abstracts/variables';
 
 
 /*header-srcoll*/
@@ -9,6 +9,7 @@
     margin: 0 230px;
 }
 .header-right{
+    // margin: 0 57rem;
     font-size: 20px;
     font-family: $nameFont2;
     font-weight: bold;
@@ -39,14 +40,14 @@
     }
 }
 
+
 // change coloer when hover text
 a.nav-link:hover {
-    color: red !important;
+    color: rgb(255, 0, 0) !important;
 }
 
 .navbar-nav .active>.nav-link {
-    color: red !important;
+    color: rgb(255, 0, 0) !important;
 }
 
 // /*the end nav-header */
-
