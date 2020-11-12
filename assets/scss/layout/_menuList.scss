@@ -1,0 +1,79 @@
+
+
+// css phần tạo menu monbile
+.nav-bar-btn{
+    width: 28px;
+    height: 28px;
+    display: none;
+}
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0 , 0, 0, 0.3);
+    display: none;
+    animation: fadeInLeft linear 0.2s;
+}
+.nav-mobile{
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s ;
+}
+.nav-mobile-list{
+    margin-top: 24px;
+}
+.nav-mobile-link{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+}
+.nav-mobile-close{
+    width: 28px;
+    height: 28px;
+    color: #666;
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+}
+.nav-input{
+    display: none;
+}
+.nav-input:checked ~ .nav-overlay{
+    display: block;    
+}
+.nav-input:checked ~ .nav-mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media (max-width: 1023px){
+    .nav-bar-btn{
+        display: block;
+    }
+    .nav-pc{
+        display: none;
+    }
+}
+
+@keyframes fadeInLeft{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/*end Mobile nav*/

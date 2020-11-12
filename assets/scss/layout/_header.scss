@@ -1,4 +1,4 @@
- @import '../abstracts/variables';
+ 
 
 
 /*header-srcoll*/
@@ -9,7 +9,6 @@
     margin: 0 230px;
 }
 .header-right{
-    // margin: 0 57rem;
     font-size: 20px;
     font-family: $nameFont2;
     font-weight: bold;
@@ -17,12 +16,7 @@
     word-spacing: 2px;
 }
 
-// #header-inner{
-//     position: fixed;
-//     z-index: 1;
-//     width: 100%;
-//     padding: 50px 10px;
-// }
+
 .dropdown:hover>.dropdown-menu {
     display: block;
   }
@@ -45,163 +39,14 @@
     }
 }
 
-/*slick-slide-main*/
-.img-area img{
-    width: 100%;
-    height: 100vh;
-    opacity: 0.7;
-}
-.banner-text{
-    position: absolute;
-    top: 50%;
-    left: 37%;
-    transform: translateX(-50%, 50%);
-    text-align: center;
-    font-family: $nameFont2;
-    h2{
-        
-        text-shadow: 1px 1px 2px black, 0 0 25px rgb(217, 255, 0), 0 0 5px rgb(137, 139, 0);
-        font-size: 55px;
-        text-transform: uppercase;
-        color: yellowgreen;
-        margin: 0;
-        font-weight: bold;
-        text-align: justify;
-    }
-    p{
-        text-shadow: 1px 1px 2px black, 0 0 25px rgb(217, 255, 0), 0 0 5px rgb(137, 139, 0);    
-        font-size: 30px;
-        text-transform: capitalize;
-        color: yellow;
-        font-weight: bold;
-        text-align: justify;
-        font-family: $nameFont2;
-    }
-
-}
-/*end slick-slide-main*/
-
-// css phần tạo menu monbile
-.nav-bar-btn{
-    width: 28px;
-    height: 28px;
-    display: none;
-}
-.nav-overlay{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0 , 0, 0, 0.3);
-    display: none;
-    animation: fadeInLeft linear 0.2s;
-}
-.nav-mobile{
-    position: fixed;
-    top: 0 ;
-    left: 0;
-    bottom: 0;
-    width: 320px;
-    max-width: 100%;
-    background-color: #fff;
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: transform linear 0.2s, opacity linear 0.2s ;
-}
-.nav-mobile-list{
-    margin-top: 24px;
-}
-.nav-mobile-link{
-    text-decoration: none;
-    color: #333;
-    display: block;
-    padding: 8px 0;
-    font-size: 1.4rem;
-}
-.nav-mobile-close{
-    width: 28px;
-    height: 28px;
-    color: #666;
-    position: absolute;
-    top: 0.4rem;
-    right: 1rem;
-}
-.nav-input{
-    display: none;
-}
-.nav-input:checked ~ .nav-overlay{
-    display: block;    
-}
-.nav-input:checked ~ .nav-mobile{
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-@media (max-width: 1023px){
-    .nav-bar-btn{
-        display: block;
-    }
-    .nav-pc{
-        display: none;
-    }
-}
-
-@keyframes fadeInLeft{
-    from{
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-/*end Mobile nav*/
-
-
-
-
 // change coloer when hover text
 a.nav-link:hover {
-    color: yellow !important;
+    color: red !important;
 }
 
 .navbar-nav .active>.nav-link {
-    color: yellow !important;
+    color: red !important;
 }
 
 // /*the end nav-header */
-/* Features Section */
-#features {
-	padding: 120px 0;
-}
-#features .features-item {
-	margin: 0 20px;
-}
 
-#features .features-item h2, h3, p{
-    font-family: $nameFont1;
-    color: yellow;
-    font-weight: bold;
-}
-#features img {
-    object-fit: contain;
-    width: 100%;
-    height: auto;
-	margin: 30px auto 20px;
-}
-#features .about-img:before {
-	display: block;
-	content: '';
-	position: absolute;
-	top: 8px;
-	right: 8px;
-	bottom: 8px;
-	left: 8px;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-}
-#features p {
-	line-height: 24px;
-	margin: 15px 0 30px;
-}

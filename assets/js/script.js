@@ -89,3 +89,49 @@ function scrollFunction() {
   }
 }
 
+
+//Slide AboutUs
+if ($('.project-two-carousel').length) {
+  $('.project-two-carousel').owlCarousel({
+      loop: true,
+      margin: 50,
+      nav: false,
+      dots: false,
+      center: true,
+      smartSpeed: 700,
+      autoplay: 5000,
+      navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+      responsive: {
+          0: {
+              items: 1
+          },
+          600: {
+              items: 1
+          },
+          778: {
+              items: 1
+          },
+          800: {
+              items: 1
+          },
+          991: {
+              items: 1
+          },
+          1200: {
+              items: 1,
+              margin: 0,
+              stagePadding: 175,
+          },
+          1500: {
+              items: 1,
+              stagePadding: 400
+          }
+      }
+  });
+  $('.project-style-two-carousel-nav.btn-prev').on('click', function() {
+     $('.project-two-carousel').trigger('next.owl.carousel'); 
+  });
+  $('.project-style-two-carousel-nav.btn-next').on('click', function() {
+     $('.project-two-carousel').trigger('prev.owl.carousel'); 
+  });
+}
