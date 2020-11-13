@@ -33,6 +33,11 @@
     src: url(../fonts/#{$nameFont3}-Regular.ttf);
     font-weight: 400;
 }
+@font-face{
+    font-family: $nameFont5;
+    src: url(../font/#{$nameFont5}-Regular.ttf);
+    font-weight: 400;
+}
 
 
 body {

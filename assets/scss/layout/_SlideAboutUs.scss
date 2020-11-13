@@ -10,7 +10,7 @@
   }
   
   .white {
-    color: #fff !important;
+    color: rgb(192, 13, 13) !important;
   }
   .mt{float: left;margin-top: -20px;padding-top: 20px;}
   .bg-blue-ui {
@@ -42,19 +42,18 @@
     background: #0fc9af;
   }
   
-  
-  
-  
   .item-carousel-blog-block {
     outline: medium none;
     padding: 15px;
   }
   
   .item-box-blog {
+    background: rgb(221, 221, 221);
     border: 1px solid #dadada;
     text-align: center;
     z-index: 4;
     padding: 20px;
+    margin-top: 15px;
   }
   
   .item-box-blog-image {
@@ -69,10 +68,10 @@
   .item-box-blog-date {
     position: absolute;
     z-index: 5;
-    padding: 4px 20px;
-    top: -20px;
-    right: 8px;
-    background-color: #41cb52;
+    padding: 0px 20px;
+    top: -40px;
+    left: 0px;
+    font-size: 1.5rem;
   }
   
   .item-box-blog-date span {
@@ -88,10 +87,6 @@
   
   .item-box-blog-date span.day {
     font-size: 16px;
-  }
-  
-  .item-box-blog-body {
-    padding: 10px;
   }
   
   .item-heading-blog a h5 {
@@ -116,6 +111,7 @@
   .item-box-blog-text {
     max-height: 100px;
     overflow: hidden;
+    text-align: justify;
   }
   
   .mt-10 {
@@ -149,4 +145,11 @@
       font-weight: bold;
       text-transform: capitalize;
   }
+
+  .person-info{
+    padding-left: 1.5rem;
+  }
   
+  .center-vertical-person-info{
+    margin: 20px;
+  }
