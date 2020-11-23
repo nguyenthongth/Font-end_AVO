@@ -1,6 +1,6 @@
 
 
-@import '../abstracts/variables';
+@import '../abstracts/variable';
 
 // bootstrap
 @import '../vendor/bootstrap';
@@ -13,6 +13,8 @@
 @import '../vendor/fontAwesome';
 // end fontawesome
 
+//Resize
+@import '../components/wrapImgResize';
 // font
 @import '../vendor/font';
 //end font

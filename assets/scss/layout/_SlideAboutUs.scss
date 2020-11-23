@@ -75,7 +75,7 @@
   }
   
   .item-box-blog-date span {
-    color: #fff;
+    color: rgb(255, 1, 1);
     display: block;
     text-align: center;
     line-height: 1.2;
@@ -137,13 +137,13 @@
     height: auto;
     border-radius: 50%;
   }
+
   .header-SlideAboutUS{
       margin: 5%;
-      padding: 2%;
+      padding: 50px;
       font-family: $nameFont3;
-      color: red;
-      font-weight: bold;
-      text-transform: capitalize;
+      color: #495057;
+      text-transform: uppercase;
   }
 
   .person-info{
