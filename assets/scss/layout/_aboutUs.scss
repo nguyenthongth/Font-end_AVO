@@ -82,6 +82,11 @@
     font-size: 25px;
 }
 
-// .img-AboutUs{
-//     background-image: url(images/AboutUs.jpg);
-// }
+@media(max-width:575px){
+    .icon-inner img{
+        font-size: 30px;
+    .heading-area h3{
+        font-size: 25px;
+    }
+    }
+}

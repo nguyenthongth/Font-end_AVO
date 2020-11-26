@@ -18,10 +18,17 @@
         max-height: 100%;
     }
 }
-
+.slide-text-left{
+    width: 40%;
+}
 .silde-text-right{
     float: right;
+    text-align: right;
+    width: 10%;
+    right: 0;
+    top: 0;
 }
+
 
 .number{
     color: white;
@@ -29,14 +36,14 @@
 }
 
 .wrapImgSlideMain{
-    height: calc(100vh - 164px);
+    height: 100vh;
 }
 
 .img-video{
     display: block;
     width: 60px;
     height: 60px;
-    top: 80%;
+    top: 145%;
     left: 55%;
     border-radius: 50%;
     background: red;
@@ -59,36 +66,83 @@
 }
 .wrap-text-slide-main{
     position: relative;
-    // top: -50%;
     left: -50%;
     transform: translateY(-50%);
-    text-align: center;
     font-family: $nameFont1;
     h2{
         
         text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(219, 219, 185);
-        font-size: 50px;
+        font-size: 40   px;
         text-transform: uppercase;
         color: rgb(247, 98, 40);
         margin: 0;
         font-weight: bold;
-        text-align: justify;
+       text-align: left;
     }
     p{
         text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(216, 216, 193);    
-        font-size: 20px;
+        font-size: 16px;
         text-transform: capitalize;
         color: yellow;
         font-weight: bold;
-        text-align: justify;
         font-family: $nameFont1;
+        line-height: 1.5;
     }
 
 }
 
-@media only screen and (max-width:1366px){
+@media(max-width:991px){
     .slide-text-left h2{
-        font-size: 35px;
+        font-size: 25px;
+    }
+    .slide-text-left p{
+        font-size: 14px;
+    }
+    .slide-text-left a{
+        font-size: 14px;
+    }
+    .silde-text-right h4{
+        font-size: 20px;
+    }
+    .silde-text-right p{
+        font-size: 14px;
     }
 }
+
+@media(max-width: 767px){
+    .slide-text-left h2{
+        font-size: 25px;
+    }
+    .slide-text-left p{
+        font-size: 14px;
+    }
+    .slide-text-left a{
+        font-size: 14px;
+    }
+    .silde-text-right h4{
+        font-size: 20px;
+    }
+    .silde-text-right p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 575px){
+   .slide-text-left h2{
+        font-size: 20px;
+    }
+    .slide-text-left p{
+        font-size: 10px;
+    }
+    .slide-text-left a{
+        font-size: 11px;
+    }
+    .silde-text-right h4{
+        font-size: 15px;
+    }
+    .silde-text-right p{
+        font-size: 10px;
+    }
+}
+
 /*end slick-slide-main*/

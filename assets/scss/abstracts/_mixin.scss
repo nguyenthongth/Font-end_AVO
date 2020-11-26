@@ -40,4 +40,17 @@
     -o-object-fit: $value;
 }
 
+// @mixin flexbox (
+//     $align : flex-start,
+//     $justify: flex-start,
+//     $flex-direction: row,
+//     $swap: nowrap
+// ){
+//     display: flex;
+//     align-items: $align;
+//     justify-content: $justify;
+//     flex-direction: $flex-direction;
+//     flex-wrap: $wrap;
+// }
+
 

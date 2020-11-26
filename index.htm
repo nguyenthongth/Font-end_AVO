@@ -11,11 +11,21 @@
 </head>
 
 <body>
+<!-- <div class="loading">
+  <div style="--value: 1"></div>
+  <div style="--value: 2"></div>
+  <div style="--value: 3"></div>
+  <div style="--value: 4"></div>
+  <div style="--value: 5"></div>
+  <div style="--value: 6"></div>
+  <div style="--value: 7"></div>
+  <div style="--value: 8"></div>
+</div> -->
   <!-------------------------------------------- header-scroll ----------------------------------------------->
   <div>
     <nav id="header-inner" class="navbar navbar-expand-lg navbar-light fixed-top" aria-label="logo">
       <div class="container">
-        <a class="navbar-brand wrapImgResize" href="index.htm">
+        <a class="navbar-brand" href="index.htm">
           <img class="img-logo" src="assets/images/TravelNhaTrang.png" alt="logo" />
         </a>
         <div class="nav-pc header-right collapse navbar-collapse" id="navbarSupportedContent">
@@ -85,7 +95,7 @@
 
   <!---------------------------------- slick-slide-main ----------------------------------------->
 
-  <div class="SlideMain text-center">
+  <div class="SlideMain">
     <div>
       <div class="wrapImgResize wrapImgSlideMain">
        <img src="assets/images/Banner1.jpg" alt="BG13" />
@@ -94,13 +104,13 @@
             <div class="row align-content-center">
               <div class="col-md-12 ">
                 <div class="silde-text-right">
-                  <h4 class="number">0</h4>
-                  <p>Nhiều năm <span class="d-block">kinh nghiệm</span></p>
+                  <h4 class="number" id="number1">0</h4>
+                  <p>Nhiều năm kinh nghiệm</span></p>
                 </div>
                 <div class="slide-text-left">
-                  <h2 class="mb-4">Chúng tôi tạo <span class="d-block">trang web</span> hiện đại &amp; tối giản</h2>
-                  <p>Một con sông nhỏ tên là Duden chảy ngang qua nơi ở của họ và <span class="d-block">cung cấp cho nó những chất
-                      dinh dưỡng cần thiết.</span></p>
+                  <h2 class="mb-4">Chúng tôi tạo trang web hiện đại &amp; tối giản</h2>
+                  <p>Một con sông nhỏ tên là Duden chảy ngang qua nơi ở của họ và cung cấp cho nó những chất
+                      dinh dưỡng cần thiết.</p>
                   <p class="mb-0"><a href="#" class="btn btn-danger">Khám phá dự án</a></p>
                 </div>
               </div>
@@ -110,8 +120,7 @@
             </div>
           </div>
        </div>
-      </div>
-     
+      </div>   
     </div>
 
     <div>
@@ -122,12 +131,12 @@
             <div class="row align-content-center">
               <div class="col-md-12 ">
                 <div class="silde-text-right">
-                  <h4 class="number">0</h4>
-                  <p>Hơn một trăm <span class="d-block">dự án</span> thành công</p>
+                  <h4 class="number" id="number2">400</h4>
+                  <p>Hơn một trăm dự án</span> thành công</p>
                 </div>
                 <div class="slide-text-left">
-                  <h2 class="mb-4">Chúng tôi tạo <span class="d-block">trang web</span> hiện đại &amp; tối giản</h2>
-                  <p>Một con sông nhỏ tên là Duden chảy ngang qua nơi ở của họ và <span class="d-block">cung cấp cho nó những chất
+                  <h2 class="mb-4">Chúng tôi tạo trang web hiện đại &amp; tối giản</h2>
+                  <p>Một con sông nhỏ tên là Duden chảy ngang qua nơi ở của họ và cung cấp cho nó những chất
                       dinh dưỡng cần thiết.</span></p>
                   <p class="mb-0"><a href="#" class="btn btn-danger">Khám phá dự án</a></p>
                 </div>
@@ -540,8 +549,10 @@
                             Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
                         </div>
                         <!--Image-->
-                        <div class="d-flex align-items-center center-vertical-person-info resize-avatar">
-                          <img src="assets/images/person6.jpg" class="avatar" alt="avatar">
+                        <div class="d-flex align-items-center center-vertical-person-info">
+                          <div class="img-resize-aboutus">
+                            <img src="assets/images/person6.jpg" class="img-resize-aboutus1" alt="avatar">
+                          </div>
                           <div class="person-info">
                             <span class="name">Thong Nguyen</span><br>
                             <span class="position">Marketing Manager</span>
@@ -567,7 +578,9 @@
                           <!--Image-->
 
                           <div class="d-flex align-items-center center-vertical-person-info">
-                            <img alt="" src="assets/images/person5.jpg" class="avatar" alt="avatar">
+                            <div class="img-resize-aboutus">
+                              <img src="assets/images/person1.jpg" class="img-resize-aboutus1" alt="avatar">
+                            </div>
                             <div class="person-info">
                               <span class="name">Thinh Nguyen</span><br>
                               <span class="position">Project Manager</span>
@@ -590,7 +603,9 @@
                         </div>
                         <!--Image-->
                         <div class="d-flex align-items-center center-vertical-person-info">
-                          <img alt="" src="assets/images/person1.jpg" class="avatar" alt="avatar">
+                          <div class="img-resize-aboutus">
+                            <img src="assets/images/person2.jpg" class="img-resize-aboutus1" alt="avatar">
+                          </div>
                           <div class="person-info">
                             <span class="name">Bac Nguyen</span><br>
                             <span class="position">CEO</span>
@@ -621,7 +636,9 @@
                           </div>
                           <!--Image-->
                           <div class="d-flex align-items-center center-vertical-person-info">
-                            <img alt="" src="assets/images/person2.jpg" class="avatar" alt="avatar">
+                            <div class="img-resize-aboutus">
+                              <img src="assets/images/person3.jpg" class="img-resize-aboutus1" alt="avatar">
+                            </div>
                             <div class="person-info">
                               <span class="name">An Nguyen</span><br>
                               <span class="position">Mobile Manager</span>
@@ -646,7 +663,9 @@
                           </div>
                           <!--Image-->
                           <div class="d-flex align-items-center center-vertical-person-info">
-                            <img alt="" src="assets/images/person3.jpg" class="avatar" alt="avatar">
+                            <div class="img-resize-aboutus">
+                              <img src="assets/images/person4.jpg" class="img-resize-aboutus1" alt="avatar">
+                            </div>
                             <div class="person-info">
                               <span class="name">Duc Nguyen</span><br>
                               <span class="position">Developer</span>
@@ -673,8 +692,9 @@
                           </div>
                           <!--Image-->
                           <div class="d-flex align-items-center center-vertical-person-info">
-                            <img alt="" src="assets/images/person4.jpg" class="avatar" alt="avatar">
-                            <div class="person-info">
+                            <div class="img-resize-aboutus">
+                              <img src="assets/images/person5.jpg" class="img-resize-aboutus1" alt="avatar">
+                            </div>
                               <span class="name">Thong Nguyen</span><br>
                               <span class="position">Marketing Manager</span>
                             </div>
@@ -703,7 +723,7 @@
     <div class="container">
       <div class="row">
         <div class="intro">
-          <img src="assets/images/bannerAbout.jpg" data-aos="zoom-in-up" alt="bannerAbout" />
+          <img class="w-100"src="assets/images/bannerAbout.jpg" data-aos="zoom-in-up" alt="bannerAbout" />
           <div class="centered" data-aos="fade-up" ">
             <span>Get Started</span>
             <h2>Fill in the brief and get the project estimate</h2>

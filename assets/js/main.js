@@ -45,3 +45,28 @@ function scrollFunction() {
 AOS.init({
  duration: 700
 });
+
+//increase number navba slide main
+var numberOne = setInterval(increaseNumberOne, 70);
+var i = 0;
+
+function increaseNumberOne(){
+  i++;
+  var number1 = document.getElementById("number1");
+  number1.innerText = i.toString();
+  if(i==21){
+    clearInterval(numberOne);
+  }
+}
+
+var numberTwo = setInterval(increaseNumberTwo, 30);
+var x = 0;
+
+function increaseNumberTwo() {
+  x++;
+  var number2 = document.getElementById("number2");
+  number2.innerText = x.toString();
+  if (x == 400) {
+    clearInterval(numberTwo);
+  }
+}
