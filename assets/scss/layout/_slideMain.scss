@@ -47,9 +47,8 @@
     left: 55%;
     border-radius: 50%;
     background: red;
-    // -webkit-animation: pulse 2s infinite;
-    // animation: pulse 2s infinite;
     position: absolute;
+    animation: box-shadow 1.5s infinite ease;
 
 }
 .absolute{
@@ -72,7 +71,7 @@
     h2{
         
         text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(219, 219, 185);
-        font-size: 40   px;
+        font-size: 40px;
         text-transform: uppercase;
         color: rgb(247, 98, 40);
         margin: 0;
@@ -90,6 +89,18 @@
     }
 
 }
+
+
+
+
+@keyframes box-shadow {
+                        0% {
+                            box-shadow: 0 0 0 1px rgba(247, 1, 1, 0.4) 0 0 8px  rgba(255, 0, 0, 0.959),0 0 0 15px  rgba(255, 0, 0, 0.4);
+                        }
+                        100% {
+                            box-shadow: 0 0 0 8px rgba(255, 0, 0, 0.4), 0 0 0 15px rgba(255, 7, 7, 0.4), 0 0 0 30px rgba(255, 0, 0, 0.4);
+                        }
+                    }
 
 @media(max-width:991px){
     .slide-text-left h2{
