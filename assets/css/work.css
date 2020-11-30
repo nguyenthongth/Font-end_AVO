@@ -17544,7 +17544,7 @@ body {
 }
 
 .listLinkMenuSubHeaderBottom:hover {
-  color: #dbad00;
+  color: red;
   text-decoration: none;
 }
 
@@ -18163,25 +18163,38 @@ body {
   }
 }
 
-.btnScrollTop {
-  background-color: #f700ff;
-  float: right;
-  font-size: 30px;
-  padding: 5px;
-  z-index: 999;
-  display: block;
-  text-align: center;
-  border: 2px solid white;
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
+  /* Set a background color */
+  color: white;
+  /* Text color */
   cursor: pointer;
-  border-radius: 50%;
+  /* Add a mouse pointer on hover */
+  padding: 10px;
+  /* Some padding */
+  border-radius: 100%;
+  /* Rounded corners */
+  font-size: 25px;
+  /* Increase font size */
 }
 
-.btnScrollTop i {
-  line-height: 30px;
-  width: 30px;
-  text-align: center;
-  font-size: 24px;
-  color: white;
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }
 
 .loader-wrapper {
@@ -18558,11 +18571,29 @@ body {
 }
 
 .silde-text-right {
-  float: right;
+  position: absolute;
   text-align: right;
   width: 10%;
   right: 0;
   top: 0;
+}
+
+.silde-text-right:after {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  width: 5px;
+  height: 35px;
+  content: '';
+  background: red;
+}
+
+.silde-text-right h4.number {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0;
+  margin-right: 15px;
 }
 
 .number {
@@ -18802,6 +18833,11 @@ body {
   }
 }
 
+.wrapSliderAboutUs {
+  background-color: white;
+  padding: 60px 0;
+}
+
 .cta-100 {
   margin-top: 100px;
   padding-left: 8%;
@@ -18966,7 +19002,6 @@ figure img {
 
 .header-SlideAboutUS {
   margin-top: 60px;
-  padding: 50px;
   font-family: "Pattaya";
   color: #495057;
   text-transform: uppercase;
@@ -18983,6 +19018,7 @@ figure img {
 /*OUR WORKS*/
 .Main-Work {
   background-color: #f3f3f3;
+  padding: 60px 0;
 }
 
 .heading-our-work {
@@ -19071,32 +19107,74 @@ a:hover {
           flex: none;
 }
 
-.intro {
-  position: relative;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  color: white;
-  margin: 20px;
+.wrapBannerAbout {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.centered {
-  position: absolute;
-  top: 30%;
-  left: 15%;
+.wrapBgBannerContact {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contentBannerContact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.textDescriptionBannerContact {
+  font-size: 40px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  text-align: center;
+}
+
+.descriptionBannerContact {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 15px 0;
+}
+
+@media (min-width: 768px) {
+  .wrapGetStarted {
+    -webkit-box-flex: 0;
+        -ms-flex: 0  0 100%;
+            flex: 0  0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .centered {
+    text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .textDescriptionBannerContact {
+    font-size: 16px;
+    line-height: 34px;
+  }
 }
 
 .Main-Recent-Blog {
   background-color: #f3f3f3;
+  padding: 60px 0;
 }
 
 .header-RecentBlog {
   font-family: "Pattaya";
   color: #495057;
-  margin-top: 30px;
   text-transform: uppercase;
   font-size: 40px;
-  padding: 50px;
+  padding: 30px 0;
 }
 
 .heading-text-recent-blog {

@@ -22,11 +22,28 @@
     width: 40%;
 }
 .silde-text-right{
-    float: right;
-    text-align: right;
+    position: absolute;
+   text-align: right;
     width: 10%;
     right: 0;
     top: 0;
+    &:after{
+        position: absolute;
+        top: 15px;
+        right: 0px;
+        width: 5px;
+        height: 35px;
+        content: ''; 
+        background: $color19;
+    }
+      
+        h4.number{
+            font-size: 50px;
+            font-weight: 800;
+            color: $color1;
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
 }
 
 

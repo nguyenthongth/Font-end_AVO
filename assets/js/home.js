@@ -174,60 +174,6 @@ window.addEventListener("load", function(event) {
         })
     }
     // end start slide cmt
-
-    // date book room
-    var languagePage = $('html').attr('lang');
-    
-    if($('.wrapFormBookRoom').length){
-        $('.inputFrmChooseDateCheckIn').datepicker({
-            format: 'dd/mm/yyyy',
-            language: languagePage,
-            startDate: new Date(),
-            autoclose: true,
-            }).on('changeDate', function (selected) {
-            var minDate = new Date(selected.date.valueOf());
-            $('.inputFrmChooseDateCheckOut').datepicker('setStartDate', minDate);
-            
-            var valDate = $('.inputFrmChooseDateCheckIn').val();
-            $('.inputChooseDateCheckIn').val(valDate);
-        });
-
-        $('.inputFrmChooseDateCheckOut').datepicker({
-            format: 'dd/mm/yyyy',
-            language: languagePage,
-            startDate: new Date(),
-            autoclose: true,
-            }).on('changeDate', function (selected) {
-            var minDate = new Date(selected.date.valueOf());
-            $('.inputFrmChooseDateCheckIn').datepicker('setEndDate', minDate);
-            
-            var valDate = $('.inputFrmChooseDateCheckOut').val();
-            $('.inputChooseDateCheckOut').val(valDate);
-        });
-    }
-
-    if($('.modalBodyFormBookRoom').length){
-        $('.inputChooseDateCheckIn').datepicker({
-            format: 'dd/mm/yyyy',
-            language: languagePage,
-            startDate: new Date(),
-            autoclose: true,
-            }).on('changeDate', function (selected) {
-            var minDate = new Date(selected.date.valueOf());
-            $('.inputChooseDateCheckOut').datepicker('setStartDate', minDate);
-        });
-
-        $('.inputChooseDateCheckOut').datepicker({
-            format: 'dd/mm/yyyy',
-            language: languagePage,
-            startDate: new Date(),
-            autoclose: true,
-            }).on('changeDate', function (selected) {
-            var minDate = new Date(selected.date.valueOf());
-            $('.inputChooseDateCheckIn').datepicker('setEndDate', minDate);
-        });
-    }
-    // end date book room
 });
 
 $(window).on('scroll', function() {
@@ -248,37 +194,6 @@ $(window).on('scroll', function() {
     cssEase: 'linear',
   });
 /*slick-slider*/
-
-
-// window.onscroll = function() {scrollFunction()};
-// function scrollFunction() {
-//   var headerInner = document.getElementById("header-inner");
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     headerInner.style.animation = "small-to-big 0.3s 1";
-//     headerInner.style.padding = "10px 10px";
-//     headerInner.classList.add('bg-light');
-//     headerInner.classList.remove('navbar-dark');
-//     headerInner.classList.add('navbar-light');
-//   } else {
-//     headerInner.style.animation = "big-to-small 0.3s 1";
-//     headerInner.style.padding = "50px 10px";
-//     headerInner.classList.remove('bg-light');
-//     headerInner.classList.add('navbar-dark');
-//     headerInner.classList.remove('navbar-light');
-//   }
-// }
-
-//Slide AboutUs
-// $(document).ready(function(){
-
-//   $('.sliderAboutUs').slick({
-//   infinite: true,
-//   prevArrow:'<button type="button" class="slick-prev"></button>',
-//   nextArrow:'<button type="button" class="slick-next"></button>',
-//   slidesToShow: 3,
-//   slidesToScroll: 3
-//   });
-//   });
 
 //aos: animate on scroll
 AOS.init({
@@ -313,3 +228,25 @@ function increaseNumberTwo() {
 $(window).on("load", function(){
     $(".loader-wraper").fadeOut("slow"); 
 });
+
+//btn onScrollTop
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+//Get button:

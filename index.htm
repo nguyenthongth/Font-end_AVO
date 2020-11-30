@@ -511,12 +511,12 @@
   <!--END OUR WORKS-->
 
   <!--slider ABout Us-->
-  <div class="container">
-    <div class="container">
+  <div class="wrapSliderAboutUs">
+    <div class="container-xl">
       <div class="row justify-content-center" data-aos="fade-up">
         <h2 class="text-center header-SlideAboutUS">CLIENT SAYS ABOUT US?</h2>
         <div class="col-md-12">
-
+    
           <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
@@ -531,8 +531,8 @@
                       <div class="item-box-blog-image">
                         <!--Date-->
                         <div class="item-box-blog-date bg-red-ui white"><span class="fa fa-quote-left"></span> </div>
-
-
+    
+    
                         <!--Text-->
                         <div class="item-box-blog-text">
                           <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer
@@ -557,9 +557,9 @@
                       <div class="item-box-blog-image">
                         <!--Date-->
                         <div class="item-box-blog-date bg-red-ui white"> <span class="fa fa-quote-left"></span> </div>
-
+    
                         <div class="item-box-blog-body">
-
+    
                           <!--Text-->
                           <div class="item-box-blog-text">
                             <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer
@@ -567,7 +567,7 @@
                               adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
                           </div>
                           <!--Image-->
-
+    
                           <div class="d-flex align-items-center center-vertical-person-info">
                             <div class="img-resize-aboutus">
                               <img src="assets/images/person1.jpg" class="img-resize-aboutus1" alt="avatar">
@@ -616,7 +616,7 @@
                       <div class="item-box-blog-image">
                         <!--Date-->
                         <div class="item-box-blog-date bg-red-ui white"> <span class="fa fa-quote-left"></span> </div>
-
+    
                         <div class="item-box-blog-body">
                           <!--Text-->
                           <div class="item-box-blog-text">
@@ -671,9 +671,9 @@
                       <div class="item-box-blog-image">
                         <!--Date-->
                         <div class="item-box-blog-date bg-red-ui white"> <span class="fa fa-quote-left"></span> </div>
-
+    
                         <div class="item-box-blog-body">
-
+    
                           <!--Text-->
                           <div class="item-box-blog-text">
                             <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer
@@ -684,8 +684,9 @@
                           <!--Image-->
                           <div class="d-flex align-items-center center-vertical-person-info">
                             <div class="img-resize-aboutus">
-                              <img src="assets/images/person5.jpg" class="img-resize-aboutus1" alt="avatar">
+                              <img src="assets/images/person6.jpg" class="img-resize-aboutus1" alt="avatar">
                             </div>
+                            <div class="person-info">
                               <span class="name">Thong Nguyen</span><br>
                               <span class="position">Marketing Manager</span>
                             </div>
@@ -695,45 +696,42 @@
                     </div>
                   </div>
                 </div>
-                <!--.row-->
               </div>
-              <!--.item-->
+              <!--.row-->
             </div>
-            <!--.carousel-inner-->
+            <!--.item-->
           </div>
-          <!--.Carousel-->
+          <!--.carousel-inner-->
         </div>
+        <!--.Carousel-->
       </div>
     </div>
   </div>
+  
 
   <!--end slider ABout Us-->
 
   <!--Banner-About-->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="intro">
-          <img class="w-100"src="assets/images/bannerAbout.jpg" data-aos="zoom-in-up" alt="bannerAbout" />
-          <div class="centered" data-aos="fade-up" ">
-            <span>Get Started</span>
-            <h2>Fill in the brief and get the project estimate</h2>
-            <p>
-              Far far away, behind the word mountains, far from the
-              countries Vokalia and Consonantia, there live the blind
-              texts.
-            </p>
-            <p><a href=" #" class="btn btn-danger">Get started</a></p>
-          </div>
-        </div>
-      </div>
+
+  <div class="wrapBannerAbout" style="background-image: url(assets/images/bannerAbout.jpg);">
+<div class="wrapBgBannerContact">
+  <div class="container-xl containerBannercontact">
+    <div class="contentBannerContact">
+      <p class="descriptionBannerContact">Get Started</p>
+      <h3 class="textDescriptionBannerContact">Fill in the brief and get the project estimate</h3>
+      <p class="descriptionBannerContact">Far far away, behind the word mountains, far from the
+      countries Vokalia and Consonantia, there live the blind
+      texts.</p>
+      <p><a href="#" class="btn btn-danger">Xem thêm</a></p>
     </div>
-  </section>
+  </div>
+</div>
+  </div>
   <!--end Banner-About-->
 
   <!--RECENT BLOG-->
   <section class="Main-Recent-Blog">
-    <div class="container header">
+    <div class="container-xl header">
       <div class="row justify-content-center header-RecentBlog" data-aos="fade-up">
         <h2>Blog gần đây</h2>
       </div>
@@ -931,7 +929,8 @@
   </div>
 
   <!--btnscroll-->
-<div class="btnScrollTop "><i class="fas fa-arrow-alt-circle-up"></i></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
+
   <script src="assets/js/script.js"></script>
   <script src="assets/js/home.js"></script>
 
